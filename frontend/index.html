@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PAFIR — AI Integrated Framework for Patent Classification & Retrieval</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN Fallback Engine for 100% Reliable Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              darkBg: '#07111F',
+              darkSecondary: '#0D1726',
+              darkCard: '#111D2E',
+              darkBorder: '#223149',
+              cyanAccent: '#38BDF8',
+              indigoAccent: '#6366F1',
+              successGreen: '#22C55E',
+              warningYellow: '#F59E0B',
+              errorRed: '#EF4444'
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              heading: ['Manrope', 'sans-serif']
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-[#07111F] text-[#F8FAFC] font-sans antialiased min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

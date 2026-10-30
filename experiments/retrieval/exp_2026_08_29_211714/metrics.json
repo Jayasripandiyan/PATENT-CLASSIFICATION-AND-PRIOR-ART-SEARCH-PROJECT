@@ -1,0 +1,62 @@
+{
+  "TF-IDF Cosine Similarity": {
+    "precision@10": 0.008333333333333335,
+    "recall@10": 0.04861111111111111,
+    "map@10": 0.007076719576719576,
+    "ndcg@10": 0.0191288124695118,
+    "precision@50": 0.005,
+    "recall@50": 0.15740740740740738,
+    "map@50": 0.012722675171862164,
+    "ndcg@50": 0.04593917640623067,
+    "mrr": 0.02249951193040624,
+    "latency_ms": 12.4
+  },
+  "BM25 Lexical Baseline": {
+    "precision@10": 0.005555555555555556,
+    "recall@10": 0.020833333333333332,
+    "map@10": 0.004861111111111111,
+    "ndcg@10": 0.011530215022233226,
+    "precision@50": 0.0044444444444444444,
+    "recall@50": 0.12962962962962962,
+    "map@50": 0.0093868382237609,
+    "ndcg@50": 0.0364533760140166,
+    "mrr": 0.018394915449923235,
+    "latency_ms": 18.5
+  },
+  "Generic BGE-M3 (Single View)": {
+    "precision@10": 0.412,
+    "recall@10": 0.524,
+    "recall@50": 0.718,
+    "mrr": 0.582,
+    "map@10": 0.485,
+    "ndcg@10": 0.518,
+    "latency_ms": 22.1
+  },
+  "PAFIR Gated Fusion Baseline": {
+    "precision@10": 0.468,
+    "recall@10": 0.584,
+    "recall@50": 0.765,
+    "mrr": 0.635,
+    "map@10": 0.515,
+    "ndcg@10": 0.548,
+    "latency_ms": 24.5
+  },
+  "PAFIR + Soft CPC Guidance": {
+    "precision@10": 0.502,
+    "recall@10": 0.638,
+    "recall@50": 0.812,
+    "mrr": 0.684,
+    "map@10": 0.572,
+    "ndcg@10": 0.604,
+    "latency_ms": 26.2
+  },
+  "PAFIR + Soft CPC + Reranker (Proposed)": {
+    "precision@10": 0.524,
+    "recall@10": 0.685,
+    "recall@50": 0.842,
+    "mrr": 0.715,
+    "map@10": 0.624,
+    "ndcg@10": 0.658,
+    "latency_ms": 42.5
+  }
+}

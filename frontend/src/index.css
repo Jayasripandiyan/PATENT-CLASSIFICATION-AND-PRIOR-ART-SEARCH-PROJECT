@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #07111F;
+  --bg-secondary: #0D1726;
+  --bg-card: #111D2E;
+  --border-card: #223149;
+  --accent-primary: #38BDF8;
+  --accent-secondary: #6366F1;
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --text-main: #F8FAFC;
+  --text-secondary: #94A3B8;
+}
+
+body {
+  margin: 0;
+  background-color: #07111F;
+  color: #F8FAFC;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+  font-family: 'Manrope', sans-serif;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07111F;
+}
+::-webkit-scrollbar-thumb {
+  background: #223149;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #38BDF8;
+}
+
+/* Research Card Utility */
+.research-card {
+  background-color: #111D2E;
+  border: 1px solid #223149;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.4);
+}
+
+.research-card-hover {
+  transition: all 0.2s ease-in-out;
+}
+.research-card-hover:hover {
+  border-color: #38BDF8;
+  transform: translateY(-1px);
+}
+
+/* Badge System */
+.badge-primary {
+  background: rgba(56, 189, 248, 0.12);
+  color: #38BDF8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge-secondary {
+  background: rgba(99, 102, 241, 0.12);
+  color: #818CF8;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+.badge-success {
+  background: rgba(34, 197, 94, 0.12);
+  color: #4ADE80;
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Tooltip Customisation */
+.tooltip-trigger {
+  position: relative;
+  cursor: help;
+}
+
+/* Skeleton Loading Animation */
+@keyframes pulse-bg {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0.8; }
+}
+.skeleton-box {
+  animation: pulse-bg 1.5s infinite ease-in-out;
+  background-color: #1a273a;
+}
